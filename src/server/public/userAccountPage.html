@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="cssStyles.css">
+</head>
+
+<body>
+
+<ul class="banner">
+  <li class="banner"><a class="active banner" href="userAccountPage.html">My Profile</a></li>
+  <li class="banner"><a class=" banner" href="history.html">History</a></li>
+  <li class="banner"><a class=" banner" href="friendsPage.html">Friends</a></li>
+  <li class="banner"><a class=" banner" href="profile.html">Profile</a></li>
+  <li class="banner"><a class=" banner" href="about.html">About</a></li>
+</ul>
+
+<div style="padding: 200px;">
+<div class="roundDiv">
+  <label >
+    <input type="checkbox" id = "checkbox" onchange="change()">
+    <span > private account</span>
+  </label>
+    <img src="video_game_icon-01.png" alt="no icon" class="center"
+     style="width: 200px;height:200px; margin-top: 100px;">
+     <h4 id="name" style="text-align: center;">your name</h4>
+     <a href="gamePage.html">
+         <button id="startButton" class="center" style="margin-top: 50px;"> play </button>
+    </a>
+     
+
+
+</div>
+</div>
+
+</body>
+<script>
+  function change(){
+    let button = document.getElementById("checkbox")
+    
+    var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if(this.status == 200 && this.readyState == 4){
+              alert("your account is set to "+this.responseText)
+            }
+        };
+        xhttp.open("PUT", "/users/active?publicOrPrivate="+button.checked, true);
+        xhttp.setRequestHeader('Content-Type', 'application/json');
+        xhttp.send();
+  }
+  
+</script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>this is the Friends page</title>
+    <link rel="stylesheet" href="cssStyles.css">
+</head>
+<style>
+    
+    ul.friend{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    li.friend{
+        margin: auto;
+        width: 280px;
+        height: 80px;
+        background: #EEE;
+        border-bottom: 1px solid #DDD;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    li.friend.name {
+        font-size: 150%;
+        text-align: center;
+        margin: 30px;
+        padding: 50px;
+    }
+    li.friend.selected {
+        background: #43A047;
+        color: white;
+    }
+    li.friend.selected img{
+        border-color: white;
+    }
+    .friend:not(.selected):hover {
+        background: #DDD;
+    }
+    
+    img.friend{
+        width: 25%;
+        height: 80%;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    
+   
+</style>
+<body onload="friendsPageInit()">
+    <ul class="banner">
+        <li class="banner"><a href="userAccountPage.html" class="banner">
+            My Profile</a></li>
+        <li class="banner"><a href="history.html" class="banner">History</a></li>
+        <li class="banner"><a href="friendsPage.html" class="active banner">Friends</a></li>
+        <li class="banner"><a class=" banner" href="profile.html">Profile</a></li>
+        <li class="banner"><a href="about.html"  class="banner"s>About</a></li>
+      </ul>
+
+      <div class="container" >
+        <div class="RoundDivFriendsPage scrollDiv" >
+            <ul class="friend" id="exsitingFriends">
+           
+                
+            </ul>
+        </div>
+
+        <div class="RoundDivFriendsPage scrollDiv" >
+            <ul class="friend" id="pendingFriend">
+          
+            </ul>
+        </div>
+
+
+        <div>
+            <div class="RoundDivFriendsPage scrollDiv" style="height: 200px; width: 400px ;margin-top: 0%;">
+                <input type="text" name="search bar" id="searchBarFriend" placeholder="Search for new friends">
+                <button onclick="searchFriends()">search</button>
+                <ul class="friend" id="searchFriend">
+                </ul>
+            </div>
+            <div class="RoundDivFriendsPage scrollDiv" style="height: 200px;width: 400px ;margin-top: 10%;">
+                <input type="text" name="search bar" id="searchBarGame" placeholder="Search for online games">
+                <button onclick="searchGame()">search</button>
+                <ul class="friend" id="searchGame">
+                </ul>
+            </div>
+        </div>
+        
+      </div>
+
+
+
+</body>
+<script src = 'client.js'>
+
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>history</title>
+    <link rel="stylesheet" href="cssStyles.css">
+</head>
+<style>
+    ul.history{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    li.history{
+        margin: auto;
+        width: 280px;
+        height: 80px;
+        background: #EEE;
+        border-bottom: 1px solid #DDD;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    li.history:hover:not(.active){
+        background-color: #4CAF50;
+    }
+    img.historyLeft{
+        margin-right: 50px;
+        float: left;
+        width: 25%;
+        height: 80%;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    img.historyRight{
+        margin-left: 50px;
+        float: right;
+        width: 25%;
+        height: 80%;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+</style>
+<body onload="historyPageOnload()">
+    <ul class="banner">
+        <li class="banner"><a class=" banner" href="userAccountPage.html">My Profile</a></li>
+        <li class="banner"><a class=" active banner" href="history.html">History</a></li>
+        <li class="banner"><a class=" banner" href="friendsPage.html">Friends</a></li>
+        <li class="banner"><a class=" banner" href="profile.html">Profile</a></li>
+        <li class="banner"><a class=" banner" href="about.html">About</a></li>
+      </ul>
+
+    <div class="container" >
+
+        <div class="RoundDivHistoryPage scrollDiv" style="width: 250px;">
+            <ul class="history" id="activeList">
+            </ul>
+        </div>
+
+        <div class="RoundDivHistoryPage scrollDiv" style="width: 250px;">
+            <ul class="history" id="historyList">
+            </ul>
+        </div>
+
+        <div class="RoundDivHistoryPage scrollDiv" id="gameResultInfoDiv" >
+            <li class="history">
+                <img src="video_game_icon-01.png" alt="icon" class="historyLeft">
+                <p id='vsName'>     vs     </p>
+                <img src="video_game_icon-01.png" alt="icon" class="historyRight">
+            </li>
+            <h5 id= "winner"></h5>
+            <h5 id= "gameId"></h5>
+            <h5 id= "numOfTurns"></h5>
+            <h5 id= "steps"></h5>
+
+        </div>
+    </div>
+        
+</body>
+<script src="client.js">
+    
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="cssStyles.css">
+    <script src="client.js"></script>
+</head>
+
+
+
+<body onload = loadProfile()>
+    <ul class="banner">
+        <li class="banner"><a href="userAccountPage.html" class="banner">
+            My Profile</a></li>
+        <li class="banner"><a href="history.html" class="banner">History</a></li>
+        <li class="banner"><a href="friendsPage.html" class="banner">Friends</a></li>
+        <li class="banner"><a class="active banner" href="profile.html">Profile</a></li>
+        <li class="banner"><a href="about.html"  class="banner"s>About</a></li>
+    </ul>
+
+    
+
+
+    <div class="container">
+        <div class="roundDivProfile" style="margin-top:260px">
+            <img src="video_game_icon-01.png" alt="no icon" class="center"
+        style="width: 100px;height:100px; margin-top: 25px;">
+            <h3 id="name" style="text-align: center;">player name:</h3>
+            <h3 id="numGame" style="text-align: center;">Total games played: </h3>
+            <h3 id="winPercentage" style="text-align: center;">Win percentage: </h3>
+        </div>
+
+        <div class="roundDivProfileMatch">
+            <h1 id="matchHistory" style="text-align: center;">Match History</h1>
+        </div>
+    </div>
+</body>
+</html>

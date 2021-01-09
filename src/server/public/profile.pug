@@ -1,0 +1,40 @@
+doctype html
+meta(charset='UTF-8')
+head
+  title Profile
+  link(rel='stylesheet' href='cssStyles.css')
+  script(src='client.js')
+ul.banner
+  li.banner
+    a.banner(href='userAccountPage.html')
+      | My Profile
+  li.banner
+    a.banner(href='history.html') History
+  li.banner
+    a.banner(href='friendsPage.html') Friends
+  li.banner
+    a.active.banner(href='profile.html') Profile
+  li.banner
+    a.banner(href='about.html' s='') About
+.container()
+  .roundDivProfile(style='margin-top:260px')
+    img.center(src='video_game_icon-01.png' alt='no icon' style='width: 100px;height:100px; margin-top: 25px;')
+    h3#name(style='text-align: center;') your name: #{name}
+    h3#numGame(style='text-align: center;') Total games played: #{numGame}
+    h3#winPercentage(style='text-align: center;') Win percentage: #{winPercentage}
+  .roundDivProfileMatch
+    h1#matchHistory(style='text-align: center;') Match History
+    
+    li.history
+      img.historyLeft(src='video_game_icon-01.png' alt='icon')
+      p #{player1} vs #{player2}     
+      img.historyRight(src='video_game_icon-01.png' alt='icon')
+    li.history
+      img.historyLeft(src='video_game_icon-01.png' alt='icon')
+      p  #{player3} vs #{player4}       
+      img.historyRight(src='video_game_icon-01.png' alt='icon')
+    li.history
+      img.historyLeft(src='video_game_icon-01.png' alt='icon')
+      p   #{player5} vs #{player6}       
+      img.historyRight(src='video_game_icon-01.png' alt='icon')
+    

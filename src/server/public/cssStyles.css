@@ -1,0 +1,186 @@
+#logInDiv {
+    background-color: gainsboro;
+    width: 300px;
+    border: 5px solid pink;
+    padding: 50px;
+    margin: auto;
+}
+body {margin:0;}
+
+ul.banner {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li.banner {
+  float: left;
+}
+
+a.banner{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+/*hover is the color that shows in background when the mouse is 
+moved to that object*/
+
+.active {
+  background-color: #4CAF50;
+}
+
+.roundDiv {
+  margin: auto;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 20px; 
+  width: 500px;
+  height: 500px;  
+}
+
+.roundDivProfile {
+  /* margin: auto; */
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 5px; 
+  width: 200px;
+  height: 300px;
+}
+
+.roundDivProfileMatch {
+  /* margin: auto; */
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 5px; 
+  width: 300px;
+  height: 800px;
+}
+.RoundDivFriendsPage{
+  margin: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 5px; 
+  width: 300px;
+  height: 500px; 
+  
+}
+.RoundDivHistoryPage{
+  margin: auto;
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 5px; 
+  width: 300px;
+  height: 500px; 
+  
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+  display: flex;
+  margin-top: 100px;
+}
+.container > div {
+  flex: 1; /*grow*/
+}
+.scrollDiv{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+ul.history{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+li.history{
+  margin: auto;
+  width: 280px;
+  height: 80px;
+  background: #EEE;
+  border-bottom: 1px solid #DDD;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+li.history:hover:not(.active){
+  background-color: #4CAF50;
+}
+img.historyLeft{
+  margin-right: 50px;
+  float: left;
+  width: 25%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+img.historyRight{
+  margin-left: 50px;
+  float: right;
+  width: 25%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.gameBody {
+  text-align: center;
+  background-color: gray;
+}
+
+#gameboard {
+  background-color: cyan;
+  display: table;
+  height: 560px;
+  width: 650px;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 1.5rem
+}
+
+.cell {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: white;
+  margin: 5px;
+}
+
+
+.button {
+  cursor: pointer;
+  background-color: gray;
+  color: cyan;
+  height: 20px;
+  width: 100px;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}

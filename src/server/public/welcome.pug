@@ -1,0 +1,18 @@
+doctype html
+meta(charset='UTF-8')
+head
+  link(rel='stylesheet' href='cssStyles.css')
+  title Welcome to Our Game
+.roundDiv(style='margin-top: 200px; width: 400px;height: 400px;')
+  h6 Welcome, Please log in
+  label(for='Account') Account:
+  input#Account(type='text')
+  br
+  br
+  label(for='pwd') Password:
+  input#pwd(type='password' name='pwd' minlength='8')
+  br
+  br
+  button#signIn(type='button' onclick='signIn()')  sign in
+  button#signUp(type='button' onclick='signUp()')  sign up
+script(src='client.js')

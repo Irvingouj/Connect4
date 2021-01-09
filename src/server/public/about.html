@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>history</title>
+    <link rel="stylesheet" href="cssStyles.css">
+</head>
+<body>
+    <ul class="banner">
+        <li class="banner"><a class=" banner" href="userAccountPage.html">My Profile</a></li>
+        <li class="banner"><a class=" banner" href="history.html">History</a></li>
+        <li class="banner"><a class=" banner" href="friendsPage.html">Friends</a></li>
+        <li class="banner"><a class=" banner" href="profile.html">Profile</a></li>
+        <li class="banner"><a class=" active banner" href="#about">About</a></li>
+      </ul>
+
+      <div style="margin: 200px;"> 
+      <!-- <button onclick="sessionTest()">
+          session test
+      </button> -->
+    </div>
+      
+
+
+
+</body>
+<script>
+    function sessionTest(){
+    alert("called")
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText)
+        }
+    };
+    xhttp.open("GET", "/sessionTest", true);
+    xhttp.setRequestHeader('Content-Type', 'application/json');
+    xhttp.send();
+    }
+</script>
+</html>
